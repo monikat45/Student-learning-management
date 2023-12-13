@@ -1,0 +1,5 @@
+<div *ngFor="let logEntry of logEntries">
+    <!-- Display log entry details -->
+    <button (click)="onUpdate(logEntry.id, updatedData)">Update</button>
+    <button (click)="onDelete(logEntry.id)">Delete</button>
+</div>

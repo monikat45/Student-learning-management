@@ -1,0 +1,4 @@
+<form [formGroup]="logEntryForm" (ngSubmit)="onLogHours()">
+    <!-- Form fields for date, category, description, and time spent -->
+    <button type="submit" [disabled]="!logEntryForm.valid">Log Hours</button>
+</form>

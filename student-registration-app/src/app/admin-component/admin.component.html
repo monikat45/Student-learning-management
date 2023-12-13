@@ -1,0 +1,4 @@
+<form [formGroup]="courseForm" (ngSubmit)="onCreateCourse()">
+    <!-- Form fields for course name, start date, and end date -->
+    <button type="submit" [disabled]="!courseForm.valid">Create Course</button>
+</form>

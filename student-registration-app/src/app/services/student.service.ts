@@ -8,11 +8,21 @@ import { Observable } from 'rxjs';
 })
 export class StudentService {
 
-  private apiUrl = '/api/students';
+  private apiUrl = 'http://localhost:8081/api/students';
 
   constructor(private http: HttpClient) { }
 
   registerStudent(studentData: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/register`, studentData);
+  }
+  logHours(studentData: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/loghours`, studentData);
+  }
+
+  getLogEntries(studentData: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/loghours`, studentData);
+  }
+  deleteLog(studentData: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/loghours`, studentData);
   }
 }
