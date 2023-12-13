@@ -1,6 +1,6 @@
 // student-registration.component.ts
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import {FormControl, FormBuilder, FormGroup, FormArray, Validators} from '@angular/forms';
 import { StudentService } from '../services/student.service';
 import { Inject } from '@angular/core';
 
